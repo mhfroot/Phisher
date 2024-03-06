@@ -1,0 +1,86 @@
+IP                   : 180.244.134.93
+IP Type              : IPv4
+User OS              : Windows 10
+Version              : 10.0;
+Browser              : Chrome
+Location             : Bandung, Indonesia, Asia
+GeoLocation(lat, lon): -6.9174639, 107.6191228
+Currency             : Indonesian Rupiah
+
+IP                   : 180.244.134.93
+IP Type              : IPv4
+User OS              : Windows 10
+Version              : 10.0;
+Browser              : Chrome
+Location             : Bandung, Indonesia, Asia
+GeoLocation(lat, lon): -6.9174639, 107.6191228
+Currency             : Indonesian Rupiah
+
+IP                   : 180.244.134.93
+IP Type              : IPv4
+User OS              : Windows 10
+Version              : 10.0;
+Browser              : Chrome
+Location             : Bandung, Indonesia, Asia
+GeoLocation(lat, lon): -6.9174639, 107.6191228
+Currency             : Indonesian Rupiah
+
+IP                   : 180.244.134.93
+IP Type              : IPv4
+User OS              : Unknown OS Platform
+Version              : 
+Browser              : Unknown Browser
+Location             : Bandung, Indonesia, Asia
+GeoLocation(lat, lon): -6.9174639, 107.6191228
+Currency             : Indonesian Rupiah
+
+IP                   : 180.244.134.93
+IP Type              : IPv4
+User OS              : Unknown OS Platform
+Version              : 
+Browser              : Unknown Browser
+Location             : Bandung, Indonesia, Asia
+GeoLocation(lat, lon): -6.9174639, 107.6191228
+Currency             : Indonesian Rupiah
+
+IP                   : 127.0.0.1
+User OS              : Unknown OS Platform
+Version              : 
+Browser              : Unknown Browser
+
+IP                   : 180.244.134.93
+IP Type              : IPv4
+User OS              : Unknown OS Platform
+Version              : 
+Browser              : Unknown Browser
+Location             : Bandung, Indonesia, Asia
+GeoLocation(lat, lon): -6.9174639, 107.6191228
+Currency             : Indonesian Rupiah
+
+IP                   : 180.244.134.93
+IP Type              : IPv4
+User OS              : Android
+Version              : 13;
+Browser              : Handheld Browser
+Location             : Bandung, Indonesia, Asia
+GeoLocation(lat, lon): -6.9174639, 107.6191228
+Currency             : Indonesian Rupiah
+
+IP                   : 125.164.16.199
+IP Type              : IPv4
+User OS              : iPhone
+Version              : iPhone
+Browser              : Handheld Browser
+Location             : Bandung, Indonesia, Asia
+GeoLocation(lat, lon): -6.9174639, 107.6191228
+Currency             : Indonesian Rupiah
+
+IP                   : 180.244.134.93
+IP Type              : IPv4
+User OS              : Ubuntu
+Version              : Linux
+Browser              : Firefox
+Location             : Bandung, Indonesia, Asia
+GeoLocation(lat, lon): -6.9174639, 107.6191228
+Currency             : Indonesian Rupiah
+

